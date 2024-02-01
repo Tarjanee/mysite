@@ -1,0 +1,36 @@
+{% extends "basic.html" %}
+
+{% block title %}Contact{% endblock title %}
+{% block body %}
+<div class="container-fulid px-0">
+    <center>
+    <img src="https://images.wallpaperscraft.com/image/single/mug_books_mood_128878_1920x1080.jpg"  alt="image 1" width="1700" height="600">
+    </center>
+</div>
+
+<div class="container"><br><br>  
+    <h1><center>CONTACT US</center></h1>
+    <form method="post" action="contact">
+      {% csrf_token %}
+        <div class="form-group">
+          <label for="name"><b> Name:</b></label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="email"><b>Email Address:</b></label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email Address">
+          </div>
+          <div class="form-group">
+            <label for="phone"><b>Contact No:</b></label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your Contact No">
+          </div>
+          <div class="form-group">
+            <label for="city"><b>City:</b></label>
+            <input type="text" class="form-control" id="city" name="city" placeholder="Enter Your City"><br><br>
+            <center>
+              <button type="submit" style="background: black; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor:pointer;">Submit</button>
+            </center>
+          </div>
+      </form>
+</div>
+{% endblock body %}

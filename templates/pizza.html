@@ -1,0 +1,108 @@
+{% extends "basic.html" %}
+
+{% block title %}Pizza{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .food-item {
+            background-color: #fff;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .food-item img {
+            max-width: 100%;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Italian Pizza</h1>
+        <h2>7 Different Types of Italian Pizza</h2>
+    </header>
+    <div class="container">
+        <div class="food-item">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGl6emElMjBuYXBvbGV0YW5hfGVufDB8fDB8fHww&w=1000" alt="Pizza Napoletana Image-1">
+            <h1><b>1. Pizza Napoletana</b></h1>
+            <p>The dough is comprised of wheat flour, yeast, salt, and water and is left to rise for up to 24 hours. It’s shaped by hand into a flat, round disk, about 3 millimeters thick. After that, it’s topped with ingredients and baked for 90 seconds in a blisteringly hot (around 900°F) wood-burning oven. The result is a soft, elastic heart with a tall, fluffy crust called the cornicione in Italian. You can find this variety at your local Eataly’s La Pizza & La Pasta restaurant.</p>
+        </div>
+        <div class="food-item">
+            <img src="https://focus.independent.ie/thumbor/8wZRZ6CNEKeMfIDcVKsb1zAe_H0=/0x207:2500x1874/2500x1667/prod-mh-ireland/a4721670-c468-11ed-a1ff-0210609a3fe2
+            " alt="Pizza alla Pala Image-2">
+            <h1><b>2. Pizza alla Pala</b></h1>
+            <p>Meaning “paddle pizza” in Italian, pizza alla pala originated in Roman bakeries as a way to use up leftover bread dough. Bakers would stretch the dough lengthwise, top it with fresh ingredients, and serve it by the slice on a wooden paddle. Unlike pizza Napoletana, this style has a highly-hydrated dough (about 80% water) and is cooked in an electric oven around 580°F.</p>
+        </div>
+        <div class="food-item">
+            <img src="https://www.pizzaontheroad.eu/wp-content/uploads/2019/09/ADL_4586.jpg" alt="Pizza Tonda Romana Image-3">
+            <h1><b>3. Pizza Tonda Romana</b></h1>
+            <p>In Roman pizzerie, you’ll find another type: la pizza tonda Romana. This kind is flat and round and it has a very thin crust. Unlike pizza Napoletana, this style is crispy and has an almost cracker-like crust!
+
+            </p>
+        </div>
+        <div class="food-item">
+            <img src="https://www.timeoutabudhabi.com/cloud/timeoutabudhabi/2021/09/10/Fi1e1xme-Pizza-Al-Taglio-UAE-offer-1-1200x800.jpg" alt="Pizza al Taglio Image-4">
+            <h1><b>4. Pizza al Taglio</b></h1>
+            <p>Literally meaning “pizza by the cut,” pizza al taglio is the perfect pizza for enjoying on the street. It’s baked in a large, rectangular pan before it gets cut into squares or long strips. The price of each slice is often determined by the weight and customers can decide how big of a slice they want when ordering.</p>
+        </div>
+        <div class="food-item">
+            <img src="https://vincirestaurant.com/wp-content/uploads/2023/08/V_9375-scaled.jpg" alt="Pizza Fritta Image-5">
+            <h1><b>5. Pizza Fritta</b></h2>
+            <p>A classic Neapolitan street food, pizza fritta is fried pizza dough. It comes in many different shapes and forms. For example, montanara is round while calzone is shaped like a half moon. Like many other great things in life, pizza fritta was born out of a crisis. After World War II, the price of mozzarella and wood for the ovens increased dramatically. In order to continue to serve their staple dish, cooks in Napoli decided to fry the dough instead of baking it, filling it with ingredients they had on hand instead.</p>
+        </div>
+        <div class="food-item">
+            <img src="https://iltorinese.it/wp-content/uploads/2020/09/karthik-garikapati-oBbTc1VoT-0-unsplash-1024x768.jpg" alt="Pizza al Padellino Image-6">
+            <h1><b>6. Pizza al Padellino</b></h1>
+            <p>Pizza al padellino, or “pan pizza,” is a type of pizza that’s baked in small, round pans. Think of it like Italian-style “deep dish.” Typically served in Torino, pizza al padellino has a thick soft crust, that gets slightly browned on the outside when baking. It can be topped with a variety of ingredients, from prosciutto to mozzarella.</p>
+        </div>
+        <div class="food-item">
+            <img src="https://www.thespruceeats.com/thmb/QhPgIkne16JcPJt4pfnDdT8NS0E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sicilian-pizza-86505330-57965df73df78ceb8631945d.jpg" alt="Pizza Siciliana Image-7">
+            <h1><b>7. Pizza Siciliana</b></h1>
+            <p>Also known as sfincione, Sicilian-style pizza has a thick crust with a fluffy, sponge-like consistency. It is baked in a rectangular shaped pan, topped with tomato sauce, anchovies, onions, oregano, and a hard sheep’s milk cheese. For the final touch, the pizza is covered in breadcrumbs which help absorb some of the oil from the ingredient. Sfincione is often served in bakeries rather than pizzerias as a snack or street food.</p>
+        </div>
+        <!-- Repeat the food-item section for additional items -->
+    </div>
+</body>
+</html>
+
+{% endblock body %}
